@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>box-shadow</title>
+<style>
+	div {
+		border:0.1em solid;
+		width: 10em;
+		height: 10em;
+		margin: 4em;
+		border-radius: 1em;
+	}
+	
+	#one {    /* left top blur spread color */
+		box-shadow: 3em 3em 1em 0 black;
+	}
+	
+	#two {
+		box-shadow: 5em 5em 2em 1em gray;
+	}
+</style>
+</head>
+<body>
+	<div id='one'></div>
+	<div id='two'></div>
+</body>
+</html>
