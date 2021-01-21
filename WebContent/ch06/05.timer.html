@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title></title>
+<style>
+	#wrap div {
+		float: left;
+		width: 5em;
+		height: 3em;
+		margin: 0.3em 1.7em;
+		padding: 0.3em;
+		color: white;
+		background: blue;
+		border-radius: 0.3em;
+		text-align: center;
+		font-weight: bold;
+		transition-duration: 3s;
+	}
+	
+	#wrap:hover div {
+		height: 30em;
+	}
+	
+	.ease {
+		transition: ease; /* 같은 속도를 유지한다. */
+	}
+	
+	.ease-in {
+		transition: ease-in; /* 느리게 시작한다. */
+	}
+	
+	.ease-out {
+		transition: ease-out; /* 느리게 끝난다. */
+	}
+	
+	.ease-in-out {
+		transition: ease-in-out; /* 느리게 시작하고, 느리게 끝난다. */
+	}
+	
+	.linear {
+		transition: linear; /* 느리게 시작하고, 점점 빨라지다가, 느리게 끝난다. */
+	}
+</style>
+</head>
+<body>
+	<div id='wrap'>
+		<div class='ease'>ease</div>
+		<div class='ease-in'>ease-in</div>
+		<div class='ease-out'>ease-out</div>
+		<div class='ease-in-out'>ease-in-out</div>
+		<div class='linear'>linear</div>
+	</div>
+</body>
+</html>
